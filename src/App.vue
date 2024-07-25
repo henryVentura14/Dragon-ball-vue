@@ -33,7 +33,7 @@ export default defineComponent({
     const characters = ref<Character[]>([]);
     const allCharacters = ref<Character[]>([]);
     const page = ref(1);
-    const limit = 20;
+    const limit = 10;
     const isLoading = ref(false);
     const isSearching = ref(false);
     const scrollObserver = ref<HTMLElement | null>(null);

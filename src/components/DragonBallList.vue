@@ -20,6 +20,7 @@ export default defineComponent({
     characters: {
       type: Array as PropType<Character[]>,
       required: true,
+      default: () => [],  // Asegúrate de que siempre haya un arreglo
     },
   },
   components: {

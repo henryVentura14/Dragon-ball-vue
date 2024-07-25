@@ -27,6 +27,8 @@ const affiliationColors: Record<string, string> = {
   'Army of Frieza': 'bg-purple-100 text-white dark:bg-purple-800 dark:text-white',
   'Freelancer': 'bg-sky-100 text-white dark:bg-sky-800 dark:text-white',
   'Other': 'bg-cyan-100 text-white dark:bg-cyan-800 dark:text-white',
+  'Pride Troopers': 'bg-stone-100 text-white dark:bg-stone-800 dark:text-white',
+  'Villain': 'bg-cyan-100 text-white dark:bg-cyan-800 dark:text-white',
   default: 'bg-gray-100 text-white dark:bg-gray-800 dark:text-white',
 };
 
@@ -37,6 +39,12 @@ const raceColors: Record<string, string> = {
   'Namekian': 'bg-green-100 text-white dark:bg-green-800 dark:text-white',
   'Android': 'bg-indigo-100 text-white dark:bg-indigo-800 dark:text-white',
   'Majin': 'bg-pink-100 text-white dark:bg-pink-800 dark:text-white',
+  'God': 'bg-orange-100 text-white dark:bg-orange-800 dark:text-white',
+  'Angel': 'bg-yellow-100 text-white dark:bg-yellow-800 dark:text-white',
+  'Jiren Race': 'bg-slate-100 text-white dark:bg-slate-800 dark:text-white',
+  'Nucleico benigno': 'bg-teal-100 text-white dark:bg-teal-800 dark:text-white',
+  'Nucleico': 'bg-blue-100 text-white dark:bg-blue-800 dark:text-white',
+  'Unknown': 'bg-lime-100 text-white dark:bg-lime-800 dark:text-white',  
   default: 'bg-gray-100 text-white dark:bg-gray-800 dark:text-white',
 };
 
@@ -47,6 +55,12 @@ const backgroundEffects: Record<string, string> = {
   'Namekian': 'bg-gradient-to-r from-green-100 to-green-400',
   'Android': 'bg-gradient-to-r from-indigo-100 to-indigo-400',
   'Majin': 'bg-gradient-to-r from-pink-100 to-pink-400',
+  'God': 'bg-gradient-to-r from-orange-100 from-orange-400',
+  'Angel': 'bg-gradient-to-r from-yellow-100 from-yellow-400',
+  'Jiren Race': 'bg-gradient-to-r from-slate-100 from-slate-400',
+  'Nucleico benigno': 'bg-gradient-to-r from-teal-100 from-teal-400',
+  'Nucleico': 'bg-gradient-to-r from-blue-100 from-blue-400',
+  'Unknown': 'bg-gradient-to-r from-lime-100 from-lime-100',  
   default: 'bg-gradient-to-r from-gray-100 to-gray-400',
 };
 
@@ -80,7 +94,7 @@ export default defineComponent({
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   width: 284px;
-  height: 428px;
+  height: 448px;
 }
 
 .card:hover {
@@ -89,7 +103,7 @@ export default defineComponent({
 
 .image-container {
   width: 100%;
-  height: 400px;
+  height: 420px;
   overflow: hidden;
   border-radius: 0.25rem 0.25rem 0 0;
 }
@@ -102,7 +116,7 @@ export default defineComponent({
 
 .text-card {
   position: relative;
-  top: -70px;
+  top: -100px;
   color: white;
 }
 
